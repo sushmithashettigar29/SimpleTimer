@@ -1,0 +1,20 @@
+.privacy-container {
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  margin: auto;
+}
+.privacy-content h1 {
+  text-align: center;
+}
+.privacy-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+@media (max-width: 768px) {
+  .privacy-container {
+    max-width: 400px;
+  }
+}

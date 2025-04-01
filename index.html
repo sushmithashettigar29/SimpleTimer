@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Free Online Stopwatch with Loud Alarm | No Ads | SimpleTimer</title>
+
+    <meta
+      name="description"
+      content="Free online stopwatch with a loud alarm. No ads, easy to use. Perfect for workouts, cooking, exams, and productivity."
+    />
+
+    <meta
+      name="keywords"
+      content="online stopwatch, countdown timer, free timer, loud alarm, simple timer, no ads"
+    />
+
+    <meta name="author" content="Sushmitha Shettigar" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Online Stopwatch - SimpleTimer",
+        "url": "https://yourrealwebsite.com",
+        "description": "A simple and fast online stopwatch with alarm. Start, stop, and reset with ease. No ads!",
+        "applicationCategory": "Utilities",
+        "operatingSystem": "All",
+        "isAccessibleForFree": true,
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    </script>
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="navbar.css" />
+  </head>
+  <body>
+    <!-- Responsive Navbar -->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <h1><a href="index.html" class="navbar-brand">SimpleTimer</a></h1>
+
+        <div class="navbar-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar-menu">
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link">Home</a>
+          </li>
+          <li class="navbar-item">
+            <a href="about.html" class="navbar-link">About</a>
+          </li>
+          <li class="navbar-item">
+            <a href="privacy.html" class="navbar-link">Privacy Policy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <h1>Free Stopwatch</h1>
+      <div id="display">00:00:00</div>
+      <div class="buttons">
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+        <button id="reset">Reset</button>
+      </div>
+      <div class="alarm-setting">
+        <h3>Set Alarm Duration</h3>
+        <div class="time-inputs">
+          <div class="time-input">
+            <label for="hours">Hours</label>
+            <input type="number" id="hours" min="0" value="0" placeholder="0" />
+          </div>
+          <div class="time-input">
+            <label for="minutes">Minutes</label>
+            <input
+              type="number"
+              id="minutes"
+              min="0"
+              max="59"
+              value="0"
+              placeholder="0"
+            />
+          </div>
+          <div class="time-input">
+            <label for="seconds">Seconds</label>
+            <input
+              type="number"
+              id="seconds"
+              min="0"
+              max="59"
+              value="10"
+              placeholder="10"
+            />
+          </div>
+        </div>
+        <h4>Quick Timers</h4>
+        <div class="presets">
+          <button class="preset-btn" data-minutes="5">5 Min</button>
+          <button class="preset-btn" data-minutes="10">10 Min</button>
+          <button class="preset-btn" data-minutes="30">30 Min</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
