@@ -67,3 +67,8 @@ button {
 }
 
 
+.ad-container {
+  margin: 20px auto;
+  max-width: 728px;
+  text-align: center;
+}
